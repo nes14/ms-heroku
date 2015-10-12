@@ -1,0 +1,526 @@
+/* Empty. Add your own CSS if you like */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+.friends-leaderboard {
+	border: none;
+}
+
+div#user-calc,
+div#days-saved,
+div#money-saved,
+#goals,
+#pool-room,
+#goal-button {
+	text-align: center;
+}
+
+div#user-calc p {
+	/*width: 98vw;*/
+	font-size: 18px;
+	/*overflow: visible;*/
+	/*cursor: default;*/
+}
+
+div#saved a {
+	padding: 16px;
+}
+
+#slider {
+	width: 88vw;
+	text-align: center;
+}
+
+img.food-img {
+	height: 20px;
+	width: 	20px;
+}
+
+.pool-container
+.reward
+.center {
+	text-align: center;
+}
+
+.pool-container div.col img{ 
+/*	height: 2em;
+	width: 2em;*/
+}
+
+.years {
+	font-size: 35px;
+}
+
+.months,
+.days {
+	font-size: 25px;
+}
+
+.hours,
+.minutes,
+.seconds {
+	font-size: 20px;
+}
+
+#clean{
+	width: 0px;
+	height: 0px;
+}
+
+
+img.pot-o-gold-animate {
+	z-index: 9999;
+	position: fixed;
+	opacity: 0;
+	height: 0%;
+	width: 0%;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-name: fadeIn;
+
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 1;
+    height: 0%;
+    width: 0%;
+  }
+
+  to {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/*.food-items.ng-ente
+.food-items.ng-leave,
+.food-items.ng-move {
+	transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+
+	position: relative;
+	left: 5px;
+}
+
+.food-items.ng-enter {
+  opacity: 0;
+}
+.food-items.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+.food-items.ng-leave {
+  opacity: 1;
+}
+.food-items.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+.food-items.ng-move {
+  left:2px;
+  opacity: 0.5;
+}
+.food-items.ng-move.ng-move-active {
+  left:0;
+  opacity: 1;
+}*/
+
+
+/*
+*{
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-ms-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
+}
+
+.CountDown{
+	margin: auto;
+	position: relative;
+}
+
+.CountDown, .CountDown tr, .CountDown td{
+	border: 0px hidden transparent;
+}
+
+
+.CountDown .count, .CountDown .titles{
+	display: block;
+	text-align: center;
+}
+
+table.CountDown{
+	margin-top: 20%;
+	border: 0px ridge silver;
+	background: rgb(17,17,17);
+	width: auto;
+	opacity: 0.7;
+	-moz-opacity: 0.7;
+	-webkit-opacity: 0.7;
+	-o-opacity: 0.7;
+	filter:alpha(opacity=70)
+}
+.CountDown .count, .CountDown .err, .CountDown .finish{
+	font-family: 'Tw Cen MT', Ubuntu, 'Tahoma', sans-serif;
+	text-shadow: 1px 1px 0px black;
+	color: rgb(0,128,255);
+	font-size: 48pt;
+}
+
+.titles td{
+	font-size: 10pt;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: black;
+	background: rgb(0,80,220);
+	height: auto;
+}
+
+.CountDown td{
+	margin: 0px;
+	padding: 0px;
+	min-width: 96px;
+}
+
+.CountDown .tabledash{
+	border-bottom: 0px solid rgb(0,110,240);
+	color: white;
+	width: 100%;
+}
+
+.CountDown .titles{
+	font-family: Ubuntu, 'Myriad pro', 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+.CountDown .err, .CountDown .finish{
+	text-shadow: 2px 2px 0px black;
+	color: white;
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+.CountDown .err{
+	border-top: 4px solid red;
+}
+
+.CountDown .finish{
+	border-bottom: 4px solid rgb(0,110,240);
+}
+
+.CountDown .blink{
+	color: white;
+	the_background: red;
+	the_font-weight: bold;
+	the_text-decoration: underline;
+	the_text-shadow:
+		1px 1px 44px #125aed,
+		1px -1px 44px #125aed,
+		-1px 1px 44px #125aed,
+		-1px -1px 44px #125aed;
+}
+
+.hidden{
+	display: none;
+}*/
+
+/* Icons by  http://www.materialup.com/posts/kameleon-icons-pack-products */
+/* Landing Page */
+	.item{
+		border:none;
+	}
+	.col{
+		padding:0px;
+		overflow: hidden;
+		position: relative;
+	}
+	.col:after{
+		clear: both;
+  		content: "";
+  		display: block;
+	}
+	.row{
+		padding:0px;
+		position: relative;
+	}
+
+	.bar.bar-stable{
+		background-color: #575159;
+		color:white;
+	}
+	.pane, .view{
+		background-color: #E3E3E3;
+	}
+	.bar.bar-stable .title{
+		color:white;
+	}
+
+	.bar-stable .button.button-clear{
+		color:white;
+	}
+	.float-left{
+		float:left;
+		position:relative;
+	}
+	.float-right{
+		float:right;
+	}
+	#user-calc .col{
+		clear:both;
+	}
+	.landing-countdown{
+		
+		font-size: 32px;
+		
+		text-align: left;
+	
+	}
+	.landing-countdown span{
+		margin: 6px 0px;
+	}
+	#user-calc{
+		height:165px;
+		border:none;
+	}
+
+	
+
+	.item p{
+		font-size: 20px;
+		padding-left: 10px;
+	}
+
+	#goals{
+		height:260px;
+		width:350px;
+		margin:0px auto;
+		
+	}
+	#saved, .secondRow,#goals,#pool-room{
+		font-weight: 200;
+	}
+	.small_title{
+		position: relative;
+		top:40px;
+	}
+	#goals_styling a:after{
+		clear:both;
+	}
+	#goals .col .item{
+		margin:10px 0px;
+		padding:5px 0px 0px 16px;
+	}
+	#saved {
+		width:350px;
+		margin: 10px auto;
+		height:92px;
+	}
+	.points_{
+		position: absolute;
+		right:-20px;
+		top:40px;
+	}
+	#goals_styling a{
+		padding:0px;
+	}
+	.saved_icon{
+		position: relative;
+		top:-95px;
+		right:-5px;
+		z-index: 5;
+	}
+	#saved .col .float-left .item{
+		height:92px;
+		width:180px;
+		padding:40px 10px 10px 5px;
+	}
+	
+	#days-saved p{
+		text-align: left;
+	}
+	#days-saved{
+		position: relative;
+		bottom:0px;
+		left:0px;
+	}
+	#saved .col{
+		height:92px;
+	}
+	#saved .col .float-right .item{
+		position: relative;
+		    height: 92px;
+    width: 170px;
+    padding: 40px 10px 10px 5px;
+	}
+	.total_saved{
+		    position: relative;
+		    height: 0px;
+		    z-index: 3;
+		    top: -5px;
+		    left: 125px;
+	}
+	div#user-calc, div#days-saved, div#money-saved, #goals, #pool-room, #goal-button {
+		text-align: left;
+	}
+	.secondRow .col .item .item-content{
+		    height: 90px;
+    width: 175px;
+		
+	}
+	#friends{
+		position: relative;
+		bottom: -40px;
+    	left: -12px;
+	}
+
+	.friendsIcon{
+		position: absolute;
+		z-index: 3;
+		top:-5px;
+		right:-5px;
+	}
+	.rewards .item{
+		    width: 170px;
+    	height: 90px;
+    	float: right;
+	}
+
+	#rewards{
+		position: relative;
+		bottom: -40px;
+		left:-12px;
+	}
+
+	#pool-room{
+		width:350px;
+		margin:0px auto;
+		height:50px;
+	}
+	.poolIcon{
+		top:-23px;
+		left:-18px;
+	}
+	.button.button-positive{
+		width:350px;
+		margin-left: auto;
+		margin-right:auto;
+	}
+/*End of Landing Page Styling */
+
+/* Menu! */
+.list .menuItem a{
+	padding:0px;
+}
+.menuItem{
+	padding:14px 0px 0px 20px;
+	line-height: 2.4rem;
+}
+.listItems{
+	margin-left:10px;
+}
+
+/* END OF MENU*/
+
+
+/* Mortagage Calculator */ 
+.graphDiv{
+	background-color: rgba(0,0,0,.7);
+}
+.graph_icon{
+	position: relative;
+    top: -31px;
+    right: -294px;
+    z-index: 5;
+}
+.sliderDiv{
+	height:180px;
+}
+
+#slider .col h3{
+	font-size: 1.3rem;
+	font-weight: 200;
+}
+
+.interest{
+	height:160px;
+	background-color: rgba(218,221,220,0.1);
+}
+
+.interests_info h3{
+	text-align: center;
+	font-size:1.3rem;
+	font-weight: 200;
+}
+.money_icon{
+	position: absolute;
+	z-index: 5;
+	top:-19px;
+	left:-22px;
+}
+.button.button-positive.showMe {
+	background-color: #00C853;
+	border:none;
+}
+
+/* End of Mortgage Calculator */
+
+/* add-goal Page*/
+.goal_title{
+	text-align: center;
+    background-color: #00C853;
+    width: 350px;
+    position:relative;
+    margin: 0px auto;
+    padding: 10px 10px;
+    color: white;
+    height: 45px;
+}
+.goals_container{
+	height:120px;
+	position: relative;
+}
+.goals_icon{
+	float:right;
+	position: relative;
+	top:-15px;
+	right:-15px;
+}
+
+
+/* Goal Page End*/
+
+/* Pop Up Styling */
+
+.popup-head{
+	padding:10px 2px;
+	background-color: rgba(255,255,255,0.7);
+	
+}
+.popup-title{
+	font-size: 1.8rem;
+	font-weight: 200;
+}
+.popup-body{
+	font-weight: 200;
+	font-size: 1.3rem;
+	text-align: center;
+}
+/* end of pop up*/
+
+
+/* Leaderboard */
+
+.leaderboard_container .list .item:nth-child(odd){
+	
+}
+.leaderboard_container .list .item:nth-child(even){
+	
+}

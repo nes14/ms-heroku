@@ -1,0 +1,13 @@
+<ion-view view-title="Leaderboard">
+  <ion-content>
+    <ion-list class="leaderboard_container" >
+      <ion-item ng-repeat="player in players" href="#/app/leaderboard/{{players.id}}" >
+      	<span class="item item-avatar">
+      		<img ng-src='{{player.avatar}}'>
+        	<h2>{{player.title}}</h2>
+        	<p>Score: {{player.score}}</p>
+      	</span>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

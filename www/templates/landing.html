@@ -1,0 +1,156 @@
+<ion-view ng-controller="LandingCtrl" view-title="Welcome {{ users[0].name }}">
+<img ng-class="{ 'pot-o-gold-animate': animate == true }" id="clean" src="img/animation/pot-o-gold.jpg">
+	<ion-content>
+		<div class="row" id='user-calc'>
+			<div class="col">
+
+				<ion-item href="#/app/what-if">
+					<div class="float-left">
+						<img src="../img/icons/110px/Tablet-Chart.png"/>
+					</div>
+
+					<div class="float-right landing-countdown">
+						<span class="years">{{ count[0] }}</span>
+							</br></br>
+						<span class="months">{{ count[1] }}</span>  
+						<span class="days">{{ count[2] }}</span>
+							</br></br>
+						<span class="hours">{{ count[3] }}</span>  
+						<span class="minutes">{{ count[4] }}</span></br>
+						<span class="seconds">{{ count[5] }}</span>
+					</div>
+				</ion-item>
+			</div>
+		</div>
+		<div class="row" id="goals">
+			<div class="col">
+				<ion-item href="#/app/what-if/choose/add-goal" id="goals_styling">
+					<div class="float-left">
+						<img src="../img/icons/110px/analytics.png"/>
+					</div>
+
+					<div class="float-left">
+						<p class="small_title">Your Goals:</p>
+						<ion-list ng-repeat="goal in goals">
+							<p>{{goal.numberOf}} {{goal.name}} {{goal.tagLine}}</p>
+						</ion-list>
+					</div>
+				</ion-item>
+				<ion-item>
+
+					<div class="float-left">
+						<img src="../img/icons/110px/blueBG@2x.png"/>
+					</div>
+
+					<div class="float-left">
+						<p class="small_title">Your Points:</p>
+						<div class="points_">
+							<ion-list>
+								<p>{{users[0].points}}</p>
+							</ion-list>
+						</div>
+					</div>
+				</ion-item>				
+			</div>
+		</div>		
+		<div class="row" id="saved">
+			<div class="col">
+				<div class="float-left">
+					<ion-item>
+						<div id="days-saved">
+							<p>Days Saved:</p>
+							<p>{{users[0].daysSaved}}</p>
+						</div>
+					</ion-item>
+				</div>
+				<div class="float-right saved_icon">
+						<img src="../img/icons/110px/slice1@2x.png"height="55px" width:"55px"/>
+				</div>
+			</div>
+			<div class="col">
+				<div class="total_saved">
+					<img src="../img/icons/110px/Euro-Coin.png"height="55px" width:"55px"/>
+				</div>
+				<div class="float-right">
+					<ion-item>
+						<div id="money-saved">
+							<p>Total Saved:</p>
+							<p>${{users[0].moneySaved}}</p>
+						</div>
+					</ion-item>
+				</div>
+			</div>
+		</div>
+		<div class="row secondRow" id="saved" >
+			<div class="col" >
+				<div class="friendsIcon">
+						<img src="../img/icons/110px/Man-14.png"height="55px" width:"55px"/>
+				</div>
+				
+					<ion-item href="#/app/landing/leaderboard">
+						<div id="friends"> <!-- ID  is being used twice. i changed it -->
+							<p>Friends</p>
+						</div>
+					</ion-item>
+				
+			</div>
+			<div class="col rewards">
+
+				<div class="friendsIcon">
+						<img src="../img/icons/110px/Medal-2.png"height="55px" width:"55px"/>
+				</div>
+
+
+				<ion-item href="#/app/landing/rewards">
+					<div id="rewards"> <!-- Repeating of ID's :/ -->
+						<p>Rewards</p>
+						<!-- <p>${{users[0].moneySaved}}</p> -->
+					</div>
+				</ion-item>
+			</div>
+		</div>
+		<div class="row" id="pool-room">
+			<div class="col">
+				<ion-item href="#/app/landing/pool-room">
+					<div class="poolIcon float-left">
+						<img src="../img/icons/110px/Medal-2.png"height="66px" width:"66px"/>
+					</div>
+					<div class="float-left">
+						<p>Pool Room</p>
+					</div>
+				</ion-item>	
+			</div>
+		</div>
+		<button ng-click="popup()" class="button button-positive button-block confirmButton"> Confirm </button>
+	</ion-content>
+</ion-view>
+
+
+
+
+<!-- 					<table class="CountDown" id="CountDown" cellspacing="1">
+					<tbody>
+						<tr id="count_main" class="count">
+							<td id="count_y" class=" ">04</td>
+							<td id="count_n" class=" ">10</td>
+							<td id="count_w" class=" ">01</td>
+							<td id="count_d" class=" ">06</td>
+							<td id="count_h" class=" ">04</td>
+							<td id="count_m" class=" ">36</td>
+							<td id="count_s" class=" ">57</td>
+						</tr>
+						<tr id="title_main" class="titles">
+							<td id="title_y"> Years </td>
+							<td id="title_n"> Months </td>
+							<td id="title_w"> Week </td>
+							<td id="title_d"> Days </td>
+							<td id="title_h"> Hours </td>
+							<td id="title_m"> Minutes </td>
+							<td id="title_s"> Seconds </td>
+						</tr>
+						<tr>
+							<td colspan="7" class="tabledash" id="tabledash">
+							</td>
+						</tr>
+					</tbody>
+				</table> -->

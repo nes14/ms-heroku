@@ -1,0 +1,47 @@
+<ion-view ng-controller='ChooseCtrl' view-title="Save ${{change}} per month">
+	<img ng-class="{ 'pot-o-gold-animate': animate == true }" id="clean" src="img/animation/pot-o-gold.jpg">
+	<ion-content>
+		<!-- <ion-slide-box> -->
+			<!-- <ion-slide> -->
+			<div class="row">
+				<div class="col">
+					<ion-item>
+						<h1>Food</h1>
+							<ion-list ng-repeat="food in foods">
+								<ion-item class="food-item" ng-click="storeVariables(food.name, food.subText, food.numberOf)">
+									<img class="food-img" ng-src="img/fod/{{food.img}}"> {{food.numberOf}} {{food.subText}} {{food.name}} {{food.postText}}
+								</ion-item>
+							</ion-list>
+					</ion-item>
+				</div>
+			</div>
+			<!-- </ion-slide> -->
+<!-- 			<ion-slide>
+				<div class="box green">
+					<ion-item>
+						<h1>Items</h1>
+							<ion-list ng-repeat="item in items">
+								<ion-item href="#">
+									{{item.numberOf[0][0]}} {{item.name}}
+								</ion-item>
+							</ion-list>
+					</ion-item>
+				</div> -->
+			<!-- </ion-slide> -->
+		<!-- </ion-slide-box> -->
+		<div class="row">
+			<div class="col">
+				<ion-item class="food-item">
+					<ion-list class="food-item" ng-repeat="goal in tempGoals">
+						{{goal.numberOf}} {{goal.name}} {{goal.tagLine}} ${{goal.dollarAmount}}
+					</ion-list>
+				</ion-item>
+			</div>
+		</div>
+		<ion-item>
+			<div class="row" id="goal-button">
+				<button ng-click="goToGoals()" class=" button button-block button-positive">Lock in Goal!</button>
+			</div>
+		</ion-item>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,38 @@
+<ion-view ng-controller="ChooseCtrl" view-title="Goals">
+	<img ng-class="{ 'pot-o-gold-animate': animate == true }"  src="img/animation/pot-o-gold.jpg">
+	<ion-content>
+		<ion-item class="goals_container">
+			<h2 class="center goal_title" >Your Goals:
+
+
+				<div class="goals_icon">  <img src="../img/icons/110px/Analytics.png" height="55px"  width="55px"/>
+				</div>
+			</h2>
+
+		</ion-item>
+		<ion-item>
+			<ion-list ng-repeat="goal in goals" ng-init="popSavingsArray(goal.dollarAmount)">
+				{{goal.numberOf}} {{goal.name}} {{goal.tagLine}} ${{goal.dollarAmount}}
+			</ion-list>
+			<ion-list ng-repeat="goal in goalSaved" ng-init="popSavingsArray(goal.dollarAmount)">
+				{{goal.numberOf}} {{goal.name}} {{goal.tagLine}} ${{goal.dollarAmount}}
+			</ion-list>
+		</ion-item>
+		<ion-item>
+			<h2 class="center goal_title">Your Monthly Savings
+
+				<div class="goals_icon">  <img src="../img/icons/110px/Gold-Cart.png" height="55px"  width="55px"/>
+				</div>
+
+
+			</h2>
+			<br/>
+			<p class="center">${{monthlySaving}}</p>
+		</ion-item>	
+		<ion-item>
+			<div class="row">
+				<button ng-click="home()" class="button button-positive button-full">  Home  </button>
+			</div>
+		</ion-item>
+	</ion-content>
+</ion-view>

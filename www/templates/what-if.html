@@ -1,0 +1,48 @@
+<ion-view ng-controller="CalcCtrl" view-title="Mortgage Calculator">
+	<ion-content>
+		<ion-item class="graphDiv" >
+			<div class="row">
+				<div class="col">
+					<div google-chart chart="chartObject" style="{{cssStyle}}"></div>
+				</div>
+			</div>
+		</ion-item>
+		<ion-item class="sliderDiv">
+			<div class="row" id="slider">
+				<div class="col">
+					<h3>Pay off early</h3>
+					<input id="slider" ng-model="payments" ng-change="slider(payments)" type='range' min='1' max='360'>
+					<h3>Paid in {{payments}} months</h3>
+					<h3>Paid by {{paidBy}}</h3>
+				</div>
+			</div>
+
+			<div class=" graph_icon">
+						<img src="../img/icons/110px/Analytics.png"/>
+			</div>
+
+
+		</ion-item>
+		<ion-item class="interest">
+			<div class="row">
+
+
+			<div class=" money_icon">
+						<img src="../img/icons/110px/Euro-Coin.png"/>
+			</div>
+
+				<div class="col interests_info">
+					<h3>Save ${{saved}}
+					</br> in Interest</h3> 
+				</br></br>
+					<h3>Pay an extra ${{extra}} per month</h3>
+				</div>
+			</div>
+		</ion-item>
+		<ion-item>
+			<div class="row">
+				<button class="button button-block button-positive showMe" ng-model="extra" ng-click="showMeHow(extra)">Show Me How!</button>
+			</div>
+		</ion-item
+	</ion-content>
+</ion-view>
